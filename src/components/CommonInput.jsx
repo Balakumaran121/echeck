@@ -1,6 +1,6 @@
 const CommonInput = ({ label, placeholder, value, disabled, readOnly ,type,onChange,name,errors}) => {
-    const baseClasses = "w-full p-2 rounded-lg mb-4 border focus:outline-none focus:ring-2";
-    const stateClasses=errors?"border-red-500 bg-red-100 focus:ring-red-500":""
+    // const baseClasses = "w-full p-2 rounded-lg mb-4 border focus:outline-none focus:ring-2";
+    // const stateClasses=errors?"border-red-500 bg-red-100 focus:ring-red-500":""
     return (
         <div className="px-2 flex flex-col">
             <label className="text-lg font-medium text-red-800">
