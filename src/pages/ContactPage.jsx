@@ -94,7 +94,7 @@ const ContactPage = () => {
           <div className={`w-1/5 bg-red-300 fixed top-0 right-0 h-screen isolate transform transition-transform duration-300 ease-in-out ${showContactForm ? "translate-x-0" : "translate-x-full"}`}>
             <div className="p-4 flex justify-between items-center text-white">
               <h1 className="text-lg font-bold">Add Contact Form</h1>
-              <button onClick={() => setShowContactForm(false)} className="cursor-pointer text-xl hover:scale-110 font-bold">X</button>
+              <button onClick={() => {setShowContactForm(false);formik.resetForm()}} className="cursor-pointer text-xl hover:scale-110 font-bold">X</button>
             </div>
             <form onSubmit={formik.handleSubmit}  >
 
