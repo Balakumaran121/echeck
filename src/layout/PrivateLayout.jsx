@@ -1,7 +1,7 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet } from '@tanstack/react-router'
 import Navbar from '../components/Navbar'
 
-const UserLayout = () => {
+const PrivateLayout = () => {
   return (
     <div>
       <Navbar/>
@@ -13,4 +13,4 @@ const UserLayout = () => {
   )
 }
   
-export default UserLayout
+export default PrivateLayout
